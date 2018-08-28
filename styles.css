@@ -16,6 +16,8 @@ li {
   margin-right: 10px;
   margin-top: 0;
   font-family: arial, sans-serif;
+  font-size: 13;
+
 }
 
 li img {
@@ -23,7 +25,7 @@ li img {
 }
 
 li a {
-  color: #222;
+  color: rgba(0,0,0,0.87);
 }
 
 .nav a:hover {
@@ -72,15 +74,28 @@ li a {
   display: block;
   margin-left: 600;
   margin-top: 10px;
-  background-image: url("images/mic.png");
-  background-repeat: no-repeat;
-  background-size: 19px 24px;
-  background-position: right;
-  color: #747862;
+  position: relative;
+  width: 631;
+  height: 43;
+  font-size: 16;
+  color: #222;
+  font-family: arial,sans-serif;
+  padding-left: 15;
+  border-style: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  background: #fff;
+  border-radius: 2px;
+}
 
-   border-radius: 0;
-   -webkit-appearance: none;
-   border-style: outset;
+.search img {
+  position: absolute;
+  left: 1100;
+  bottom: 10;
+}
+
+.search input:hover {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),
+  0 0 0 1px rgba(0,0,0,0.8);
 }
 
 input[type=text] {
