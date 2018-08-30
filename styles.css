@@ -1,7 +1,6 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
-  height: 500;
 }
 
 ul {
@@ -34,21 +33,29 @@ li a {
 
 .logo img {
   display: block;
-  margin-left: 725;
-  padding-top: 150px;
+ margin: 0 auto;
+  padding-top: 120px;
   padding-bottom: 30px;
 }
 
 .buttons {
   display: block;
-  margin-left: 720;
+  position: relative;
   margin-bottom: -72;
+  margin: 0 auto;
 }
 
-.button_1, .button_2 {
-  display: inline;
-  margin: 0;
+.button_1 {
+	position: absolute;
+	left: 600;
 }
+
+.button_2 {
+	position: absolute;
+	left: 750;
+}
+
+
 
 .button_1 input, .button_2 input {
   background-color: #f2f2f2;
@@ -72,7 +79,8 @@ li a {
 .search input {
   position: relative;
   display: block;
-  margin-left: 600;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   position: relative;
   width: 631;
@@ -89,7 +97,7 @@ li a {
 
 .search img {
   position: absolute;
-  left: 1100;
+  left: 1000;
   bottom: 10;
 }
 
@@ -104,43 +112,49 @@ input[type=text] {
   box-shadow: white;
 }
 
-.footer p {
-  position: absolute;
-  padding-bottom: 20;
-  padding-top: 10;
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.country {
+	color: rgba(0,0,0,.54);
+	font-family: arial, sans-serif;
+	font-size:15px;
+	line-height: 40px;
+	padding: 10 40;
+	background: #f2f2f2;
+	display: block;
+	border-top: 1px solid #e4e4e4;
+	padding: 0 30;
 }
 
 .footer ul {
-  margin-top: 50;
-  position: absolute;
-  padding-right: 0;
-  border-bottom: none;
+	list-style-type: none;
+	background: #f2f2f2;
+	padding-bottom: 20;
+	margin: 0;
+	display: block;
+	border-top: 1px solid #e4e4e4;
 }
 
-.left {
-  float: left;
+.footer li {
+	color: rgba(0,0,0,.54);
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	background: #f2f2f2;
+	float: left;
+	padding: 10 15;
 }
 
-.footer p, .footer ul {
-  background-color: #f2f2f2;
-  min-width: 98%;
-  margin-left: 0;
-  padding-left: 30;
-  padding-right: 0;
-  margin-bottom: 0;
-  color: rgba(0,0,0,.54);
-  font-family: arial, sans-serif;
-  font-size: 15;
+#privacy {
+	float: right;
 }
 
-.footer a:link {
-  color: rgba(0,0,0,.54);
-}
-
-.footer a:visited {
-    color: rgba(0,0,0,.54);
-}
-
-.footer a:hover {
-    text-decoration: underline;
+.footer li:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
